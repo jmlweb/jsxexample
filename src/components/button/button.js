@@ -22,7 +22,7 @@ const Button = styled.button`
   &:hover {
     background: ${styledMap({
       primary: hoverColor(primary),
-      success: hoverColor(primary),
+      success: hoverColor(success),
       danger: hoverColor(danger),
       default: '#85786f',
     })};
