@@ -11,7 +11,9 @@ const TestForm = ({ title = 'Sin título' }) => (
       <TextArea placeholder="Por favor, introduce tu mensaje" />
     </div>
     <div>
-      <Button primary>Enviar</Button>
+      <Button success lg>
+        Enviar
+      </Button>
     </div>
   </Form>
 );

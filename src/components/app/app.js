@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import TestForm from './components/testForm/testForm';
+import TestForm from '../testForm/testForm';
 
 const App = () => (
   <div>
