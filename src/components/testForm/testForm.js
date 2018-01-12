@@ -11,7 +11,9 @@ const TestForm = ({ title = 'Sin título' }) => (
 
     <p>{title}</p>
 
-    <Input lg placeholder="Email" />
+    <Input lg placeholder="Oops" />
+    <Input lg hasError placeholder="Email" />
+    <Input lg isOk placeholder="Email" />
     <Input sm placeholder="User Name" />
     <Input placeholder="Pass" />
 
