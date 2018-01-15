@@ -1,3 +1,5 @@
+import React from 'react';
+
 import styled from 'styled-components';
 import styledMap from 'styled-map';
 import { darken } from 'polished';
@@ -29,4 +31,10 @@ const Button = styled.button`
   }
 `;
 
+// no extends...
+// const PlusMinusBtn = Button.extend`
+// 	color:#000;
+// `;
+
 export default Button;
+
