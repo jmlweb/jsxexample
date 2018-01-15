@@ -11,15 +11,13 @@ const PlusMinusBtn = Button.extend`
 	color:#000;
 `;
 
-const boxTitle = styled.p`
-  font-size:8px;
-  color:#fff;
-`;
-
 const PlusMinusComp = ({ boxTitle = 'Sin título' }) => (
 
 	<PlusMinusHolder>
-		<boxTitle>{boxTitle}</boxTitle>
+		<boxTitle>
+			{boxTitle}
+			<a href="#">Loreim Ipsum</a>
+		</boxTitle>
 		<PlusMinusBtn>-</PlusMinusBtn>
 		<Input placeholder="1" />
 		<PlusMinusBtn>+</PlusMinusBtn>

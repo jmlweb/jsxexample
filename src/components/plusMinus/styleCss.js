@@ -19,6 +19,11 @@ const PlusMinusBox = styled.div`
     & button {
         width:100%;
         max-width : 20px;
+
+        &:last-child {
+            background:#f00;
+            color:#fff;
+        }
     }
 `;
 
