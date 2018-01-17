@@ -27,9 +27,10 @@ const PlusMinusBox = styled.div`
     }
 `;
 
-const boxTitle = styled.p`
+const boxTitle = styled.a`
   font-size:8px;
   color:#fff;
+  padding:10px;
 `;
 
 const PlusMinusHolder = ({ children }) => <PlusMinusBox><boxTitle></boxTitle>{children}</PlusMinusBox>

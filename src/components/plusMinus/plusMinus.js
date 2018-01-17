@@ -14,11 +14,11 @@ const PlusMinusBtn = Button.extend`
 	}
 `;
 
-const PlusMinusComp = ({ boxTitle = 'Sin título' }) => (
+const PlusMinusComp = ({ boxTitleText = 'Sin título' }) => (
 
 	<PlusMinusHolder>
 		<boxTitle>
-			{boxTitle}
+			{boxTitleText}
 			<a href="../">Loreim Ipsum</a>
 		</boxTitle>
 		<PlusMinusBtn>-</PlusMinusBtn>
