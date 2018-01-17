@@ -1,13 +1,14 @@
 
 import styled from 'styled-components';
 import styledMap from 'styled-map';
-import { darken } from 'polished';
+import { darken, lighten } from 'polished';
 import { setLightness } from 'polished';
 
 import { colorPrimary, colorSuccess, colorDanger, colorGrey } from '../../constants/colors';
 //import styleCss from '../plusMinus/styleCss';
 
-const hoverColor = color => darken(0.15, color);
+const hoverDarkColor = color => darken(0.15, color);
+const hoverLightColor = color => lighten(0.15, color);
 
 const Button = styled.button`
 	border: 1px solid transparent;
@@ -15,6 +16,7 @@ const Button = styled.button`
 	text-align: center;
 	white-space: nowrap;
 	vertical-align: middle; 
+	user-select: none;
 	transition: all .2s ease-in-out; 
 	margin:5px 5px 5px 0;
 
@@ -34,8 +36,8 @@ const Button = styled.button`
 		success: (colorSuccess),
 		danger: (colorDanger),
 		secondary: setLightness(0.9, (colorGrey)),
-		disabled: '#888',
-		default: '#85786f',
+		disabled: setLightness(0.75, (colorGrey)),
+		default: (colorPrimary),
 	})};
 
   font-size: ${styledMap({
@@ -52,12 +54,13 @@ const Button = styled.button`
   &:hover {
 	transition: all .2s ease-in-out;
 	background: ${styledMap({
-		primary: hoverColor(colorPrimary),
-		success: hoverColor(colorSuccess),
-		danger: hoverColor(colorDanger),
+		primary: hoverDarkColor(colorPrimary),
+		success: hoverDarkColor(colorSuccess),
+		danger: hoverDarkColor(colorDanger),
 		default: '#85786f',
 	})};
 	}
+	
 	
 `;
 
