@@ -17,10 +17,17 @@ const PlaygroundInner = styled.div`
 		
 		h2 {
 			font-weight: 100;
+			margin:0;
 		}
 		
 		h3 {
 			font-weight: 100;
+			margin:7px 0;
+
+		}
+
+		section {
+			margin-bottom:55px;
 		}
 `;
 
