@@ -1,14 +1,11 @@
 import React from 'react';
-//import styled from 'styled-components';
 import styledMap from 'styled-map';
 import { darken, lighten } from 'polished';
 import { setLightness } from 'polished';
 
-
 import Button from '../button/button';
 import { colorPrimary, colorSuccess, colorDanger, colorGrey } from '../../constants/colors';
 
-const hoverDarkColor = color => darken(0.15, color);
 
 const ButtonDisabled = Button.extend`
 	cursor: not-allowed;
@@ -24,7 +21,7 @@ const ButtonDisabled = Button.extend`
 		default: (colorPrimary),
 	})};
 	}
-	
+
 `;
 
 export default ButtonDisabled;
