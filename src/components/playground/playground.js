@@ -5,6 +5,7 @@ import Form from '../form/form';
 //import TextArea from '../textarea/textarea';
 import Button from '../button/button';
 import ButtonOutLine from '../button/buttonOutLine';
+import ButtonDisabled from '../button/buttonDisabled';
 //import CheckBox from '../checkbox/checkbox';
 //import Input from '../input/input';
 
@@ -23,9 +24,6 @@ const PlaygroundInner = styled.div`
 		}
 `;
 
-const someTitle = styled.h2`
-	color:#ff0;
-`;
 
 const PlayGround = () => (
 	<PlaygroundInner>
@@ -57,23 +55,48 @@ const PlayGround = () => (
 		<section>
 			<h3>Small btn_s</h3>
 			<ButtonOutLine primary sm>Btn Txt</ButtonOutLine>
-			<ButtonOutLine secondary sm >Btn Txt</ButtonOutLine>
-			<ButtonOutLine success sm >Btn Txt</ButtonOutLine>
-			<ButtonOutLine danger sm >Btn Txt</ButtonOutLine>
+			<ButtonOutLine secondary sm>Btn Txt</ButtonOutLine>
+			<ButtonOutLine success sm>Btn Txt</ButtonOutLine>
+			<ButtonOutLine danger sm>Btn Txt</ButtonOutLine>
 		</section>
 		<section>
 			<h3>Default btn_s</h3>
 			<ButtonOutLine primary>Btn Txt</ButtonOutLine>
-			<ButtonOutLine secondary >Btn Txt</ButtonOutLine>
-			<ButtonOutLine success >Btn Txt</ButtonOutLine>
-			<ButtonOutLine danger >Btn Txt</ButtonOutLine>
+			<ButtonOutLine secondary>Btn Txt</ButtonOutLine>
+			<ButtonOutLine success>Btn Txt</ButtonOutLine>
+			<ButtonOutLine danger>Btn Txt</ButtonOutLine>
 		</section>
 		<section>
 			<h3>Large btn_s</h3>
 			<ButtonOutLine primary lg>Btn Txt</ButtonOutLine>
-			<ButtonOutLine secondary lg >Btn Txt</ButtonOutLine>
-			<ButtonOutLine success lg >Btn Txt</ButtonOutLine>
-			<ButtonOutLine danger lg >Btn Txt</ButtonOutLine>
+			<ButtonOutLine secondary lg>Btn Txt</ButtonOutLine>
+			<ButtonOutLine success lg>Btn Txt</ButtonOutLine>
+			<ButtonOutLine danger lg>Btn Txt</ButtonOutLine>
+		</section>
+
+		<h2>Btn_s Disabled</h2>
+		<section>
+			<h3>Small btn_s</h3>
+			<ButtonDisabled primary sm>Btn Txt</ButtonDisabled>
+			<ButtonDisabled secondary sm>Btn Txt</ButtonDisabled>
+			<ButtonDisabled success sm>Btn Txt</ButtonDisabled>
+			<ButtonDisabled danger sm>Btn Txt</ButtonDisabled>
+		</section>
+		<h2>Btn_s Default</h2>
+		<section>
+			<h3>Small btn_s</h3>
+			<ButtonDisabled primary>Btn Txt</ButtonDisabled>
+			<ButtonDisabled secondary>Btn Txt</ButtonDisabled>
+			<ButtonDisabled success>Btn Txt</ButtonDisabled>
+			<ButtonDisabled danger>Btn Txt</ButtonDisabled>
+		</section>
+		<h2>Btn_s Disabled</h2>
+		<section>
+			<h3>Large btn_s</h3>
+			<ButtonDisabled primary lg>Btn Txt</ButtonDisabled>
+			<ButtonDisabled secondary lg>Btn Txt</ButtonDisabled>
+			<ButtonDisabled success lg>Btn Txt</ButtonDisabled>
+			<ButtonDisabled danger lg>Btn Txt</ButtonDisabled>
 		</section>
 
 	</PlaygroundInner>

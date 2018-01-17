@@ -52,15 +52,20 @@ const Button = styled.button`
 	})}; 
 	
   &:hover {
-	transition: all .2s ease-in-out;
-	background: ${styledMap({
+		outline: none;	
+		transition: all .2s ease-in-out;
+		background: ${styledMap({
 		primary: hoverDarkColor(colorPrimary),
 		success: hoverDarkColor(colorSuccess),
 		danger: hoverDarkColor(colorDanger),
+		secondary: setLightness(0.7, (colorGrey)),
 		default: '#85786f',
 	})};
 	}
 	
+	&:focus, &:active:focus {
+		outline: none;
+	}
 	
 `;
 

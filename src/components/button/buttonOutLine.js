@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+//import styled from 'styled-components';
 import styledMap from 'styled-map';
 import { darken, lighten } from 'polished';
 import { setLightness } from 'polished';
@@ -27,7 +27,7 @@ const ButtonOutLine = Button.extend`
 		primary: (colorPrimary),
 		success: (colorSuccess),
 		danger: (colorDanger),
-		secondary: setLightness(0.75, (colorGrey)),
+		secondary: setLightness(0.35, (colorGrey)),
 		default: (colorPrimary),
 	})};
 
@@ -36,7 +36,7 @@ const ButtonOutLine = Button.extend`
 		primary: hoverDarkColor(colorPrimary),
 		success: hoverDarkColor(colorSuccess),
 		danger: hoverDarkColor(colorDanger),
-		secondary: lighten(0.1, (colorGrey)),
+		secondary: setLightness(0.7, (colorGrey)),
 		default: (colorPrimary),
 	})};
 
