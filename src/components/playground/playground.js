@@ -1,13 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-//import Form from '../form/form';
-//import TextArea from '../textarea/textarea';
 import Button from '../button/button';
 import ButtonOutLine from '../button/buttonOutLine';
 import ButtonDisabled from '../button/buttonDisabled';
-//import CheckBox from '../checkbox/checkbox';
-//import Input from '../input/input';
+//import { Row } from 'react-grid-system'; 
 
 const PlaygroundInner = styled.div` 
 		padding:20px;

@@ -1,14 +1,13 @@
 
 import styled from 'styled-components';
 import styledMap from 'styled-map';
-import { setLightness, animation } from 'polished';
+import { setLightness } from 'polished';
 
 //import { success, danger } from '../../constants/colors';
 
 //const hasErrorColor = color => '#ff0'
 
 const Input = styled.input` 
-${animation(['rotate', '1s', 'ease-in-out'], ['colorchange', '2s'])}
 	display: block;
 	width: 75%;
 	font-size: 13px;
@@ -31,7 +30,7 @@ ${animation(['rotate', '1s', 'ease-in-out'], ['colorchange', '2s'])}
 		sm: '8px 12px',
 		default: '4px 12px',
 	})};
-  font-size: ${styledMap({
+  	font-size: ${styledMap({
 		lg: '16px',
 		sm: '10px',
 		default: '13px',

@@ -22,17 +22,17 @@ const PlusMinusBox = styled.div`
 
         &:last-child {
             background:#f00;
-            color:#fff;
+            color:#fff; 
         }
     }
 `;
 
-const boxTitle = styled.a`
+const BoxTitleLink = styled.a`
   font-size:8px;
   color:#fff;
   padding:10px;
 `;
 
-const PlusMinusHolder = ({ children }) => <PlusMinusBox><boxTitle></boxTitle>{children}</PlusMinusBox>
+const PlusMinusHolder = ({ children }) => <PlusMinusBox><BoxTitleLink></BoxTitleLink>{children}</PlusMinusBox>
 
 export default PlusMinusHolder;
