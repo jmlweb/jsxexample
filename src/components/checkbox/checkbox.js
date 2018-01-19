@@ -6,10 +6,10 @@ const Label = styled.label`
   font-size: 12px;
 `;
 
-const SubText = styled.p`
-  font-size:8px;
-  color:red;
-`;
+// const SubText = styled.p`
+//   font-size:8px;
+//   color:red;
+// `;
 
 const Input = styled.input.attrs({
   type: 'checkbox',

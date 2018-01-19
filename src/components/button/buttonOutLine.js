@@ -1,7 +1,7 @@
-import React from 'react';
+//import React from 'react';
 //import styled from 'styled-components';
 import styledMap from 'styled-map';
-import { darken, lighten } from 'polished';
+import { darken } from 'polished';
 import { setLightness } from 'polished';
 
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Form from '../form/form';
+//import Form from '../form/form';
 //import TextArea from '../textarea/textarea';
 import Button from '../button/button';
 import ButtonOutLine from '../button/buttonOutLine';
@@ -9,8 +9,7 @@ import ButtonDisabled from '../button/buttonDisabled';
 //import CheckBox from '../checkbox/checkbox';
 //import Input from '../input/input';
 
-const PlaygroundInner = styled.div`
-    //background:#ebeced;
+const PlaygroundInner = styled.div` 
 		padding:20px;
 		font-family: sans-serif;
 		color: #252525;
@@ -21,7 +20,7 @@ const PlaygroundInner = styled.div`
 		}
 		
 		h3 {
-			font-weight: 100;
+			font-weight: 100; 
 			margin:7px 0;
 
 		}

@@ -1,14 +1,14 @@
 
 import styled from 'styled-components';
 import styledMap from 'styled-map';
-import { darken, lighten } from 'polished';
+import { darken } from 'polished';
 import { setLightness } from 'polished';
 
 import { colorPrimary, colorSuccess, colorDanger, colorGrey } from '../../constants/colors';
 //import styleCss from '../plusMinus/styleCss';
 
 const hoverDarkColor = color => darken(0.15, color);
-const hoverLightColor = color => lighten(0.15, color);
+//const hoverLightColor = color => lighten(0.15, color);
 
 const Button = styled.button`
 	border: 1px solid transparent;

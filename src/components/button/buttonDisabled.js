@@ -1,6 +1,6 @@
-import React from 'react';
+//import React from 'react';
 import styledMap from 'styled-map';
-import { darken, lighten } from 'polished';
+//import { darken, lighten } from 'polished';
 import { setLightness } from 'polished';
 
 import Button from '../button/button';
@@ -24,4 +24,4 @@ const ButtonDisabled = Button.extend`
 
 `;
 
-export default ButtonDisabled;
+export default ButtonDisabled; 
