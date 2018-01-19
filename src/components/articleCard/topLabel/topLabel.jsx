@@ -15,9 +15,9 @@ const TopLabelItem = styled.div`
 	color: #fff;
 `;
 
-const TopLabel = (props) => (
+const TopLabel = props => (
 	<TopLabelItem default={props.default}>
-		{props.content}
+		{props.children}
 	</TopLabelItem>
 );
 

@@ -15,8 +15,13 @@ const ArticleCard = () => (
 
     <ArticleCardWrapper>
         <Row nogutter>
-            <TopLabel default content='promocion' />
-            <TopLabel content='quedan 3 en oferta' />
+            <TopLabel default>
+                Ojete Moreno
+            </TopLabel>
+
+            <TopLabel>
+                quedan 3 en oferta
+            </TopLabel>
         </Row>
     </ArticleCardWrapper >
 
