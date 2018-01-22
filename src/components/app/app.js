@@ -3,19 +3,26 @@ import logo from './logo.svg';
 import TestForm from '../testForm/testForm';
 import PlusMinusComp from '../plusMinus/plusMinus';
 import PlayGround from '../playground/playground';
-import { Container, Row, Col } from 'react-grid-system';
-import GridExample from '../grid/gridExample-01';
-import ArticleCard from '../articleCard/articleCard';
+import GridExam from '../grid/syled-grid-ex';
+import { Grid, Cell } from 'styled-css-grid';
+//import { Container, Row, Col } from 'react-grid-system';
+//import GridExample from '../grid/gridExample-01';
+//import ArticleCard from '../articleCard/articleCard';
+import ArticleCardList from '../articleCard/ArticleCardList';
+
 
 const App = () => (
   <div>
-    <Row>
+    <img src={logo} className="App-logo" alt="logo" width="200" />
+    {/* <Row>
       <Col xs={6} md={3} lg={4}>
         <ArticleCard />
       </Col>
     </Row>
-    <GridExample />
-    <img src={logo} className="App-logo" alt="logo" width="200" />
+    <GridExample /> */}
+    {/* <GridExam /> */}
+    <ArticleCardList />
+
     <PlayGround />
     <TestForm title="Enviar mensaje" />
     <PlusMinusComp boxTitleText="Mas o menos" />
