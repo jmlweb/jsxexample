@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { colorPrimary, colorSuccess, colorDanger, colorGrey } from '../../constants/colors';
+import { colorPrimary, colorSuccess } from '../../constants/colors';
 
 
 const TopLabelItem = styled.div`

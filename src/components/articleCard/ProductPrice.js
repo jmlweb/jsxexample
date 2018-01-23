@@ -3,22 +3,36 @@ import PT from 'prop-types';
 import styled from 'styled-components';
 
 const ProductPriceWrapper = styled.div`
-  display: flex;
+  display:         flex;
+  align-items:     center;
   justify-content: center;
-  font-family:sans-serif;
+  font-family:     sans-serif;
 `;
 
 const ProductPriceMain = styled.div`
-    display: block;
+  font-size:    18px;
+  font-weight:  700;
+  display:      inline-block;
+  color:        #444;
+  margin-right: 8px;
 `;
 
-const ProductPriceOld = styled.span`
-    display: block;
+const ProductPriceOld = styled.div`
+    display:         block;
+    margin-right:    5px;
+    text-decoration: line-through;
+    color:           #aaa;
+    margin-right: 8px;
 `;
 
 const ProductPriceDescount = styled.div`
-  background: #f00; 
-  color:#fff;
+  display:          inline-block;
+  padding:          1px 3px;
+  border-radius:    3px;
+  color:            #fff;
+  background-color: #f35a5a;
+  vertical-align:   text-bottom;
+  font-size:        13px;
 `;
 
 
@@ -31,43 +45,43 @@ props = {
 }
 */
 const ProductPrice = props => {
-    const {
-        productPriceMain,
-        productPriceOld,
-        productPriceDescountValue,
+  const {
+    productPriceMain,
+    productPriceOld,
+    productPriceDescountValue,
     } = props;
 
-    const diference = productPriceMain - productPriceOld;
+  //const diference = productPriceMain - productPriceOld;
 
-    return (
-        <ProductPriceWrapper>
-            <ProductPriceMain>
-                {productPriceMain}€
+  return (
+    <ProductPriceWrapper>
+      <ProductPriceMain>
+        {productPriceMain}€
             </ProductPriceMain>
-            <ProductPriceOld>
-                {productPriceOld}€
-            </ProductPriceOld>
-            {productPriceDescountValue !== '0'
-                ? (
-                    <ProductPriceDescount>
-                        {productPriceDescountValue}%
-                    </ProductPriceDescount>
-                )
-                : undefined
-            }
+      <ProductPriceOld>
+        {productPriceOld}€
+      </ProductPriceOld>
+      {productPriceDescountValue !== '0'
+        ? (
+          <ProductPriceDescount>
+            {productPriceDescountValue}%
+          </ProductPriceDescount>
+        )
+        : undefined
+      }
 
-        </ProductPriceWrapper>
-    );
+    </ProductPriceWrapper>
+  );
 }
 
 ProductPrice.propTypes = {
-    productPriceMain: PT.string.isRequired,
-    productPriceOld: PT.string.isRequired,
-    productPriceDescountValue: PT.string,
+  productPriceMain: PT.string.isRequired,
+  productPriceOld: PT.string.isRequired,
+  productPriceDescountValue: PT.string,
 };
 
 ProductPrice.defaultProps = {
-    productPriceDescountValue: '0',
+  productPriceDescountValue: '0',
 };
 
 export default ProductPrice;

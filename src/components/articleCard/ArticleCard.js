@@ -1,37 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Grid, Cell } from 'styled-css-grid';
+//import { Grid, Cell } from 'styled-css-grid';
 
 import TopLabel from '../articleCard/topLabel';
+import ProductImg from '../articleCard/ProductImg';
 import ProductName from '../articleCard/ProductName';
 import ProductPrice from '../articleCard/ProductPrice';
 
 const ArticleCardWrapper = styled.div`
-  background:#fff;
-  position: relative;
-  padding:13px;
+  background: #fff;
+  position:   relative;
+  padding:    13px;
   box-shadow: 0 3px 4px 0 rgba(0,0,0,.15);
-  margin:1px;
+  margin:     1px;
 `;
 
 const TopLabelWrapper = styled.div`
-  display: block;
+  display:  block;
   position: absolute;
-  top: 10px;
-  left: 10px;
-`;
-
-const ProductImg = styled.div`
-  margin: 10px auto 20px auto;
-
-  & img {
-    height: 100%;
-    width: 100%;
-    max-height: 250px;
-    max-width: 250px;
-    display: block;
-    margin: auto;
-  }
+  top:      10px;
+  left:     10px;
 `;
 
 const ArticleCard = () => (
@@ -47,13 +35,14 @@ const ArticleCard = () => (
       </TopLabel>
     </TopLabelWrapper>
 
-    <ProductImg>
+    {/* <ProductImg>
       <img src="//thumb.pccomponentes.com/w-220-220/articles/14/142348/l1.jpg" alt="" />
-    </ProductImg>
+    </ProductImg> */}
+    <ProductImg imgSrc='//thumb.pccomponentes.com/w-220-220/articles/14/142348/l1.jpg' imgAlt='PcCom' />
 
     <ProductName productNameValue='Xiaomi Mi Mix 2 64GB 4G Dual Sim Negro Libre' />
 
-    <ProductPrice productPriceMain='222' productPriceOld='240' />
+    <ProductPrice productPriceMain='222,33' productPriceOld='240' productPriceDescountValue='14' />
 
 
   </ArticleCardWrapper >
