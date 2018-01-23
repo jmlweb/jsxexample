@@ -18,8 +18,8 @@ const ArticleCardList = () => (
     <Grid columns="repeat(auto-fit, minmax(200px, 1fr))" minRowHeight="45px" className="oops">
 
       {
-        [...Array(8)].map(() => (
-          <Cell>
+        [...Array(8)].map((_obj, id) => (
+          <Cell key={id}>
             <ArticleCard />
           </Cell>
         ))

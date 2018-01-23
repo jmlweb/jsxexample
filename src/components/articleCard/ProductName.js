@@ -9,10 +9,10 @@ const ProductNameTxt = styled.div`
   margin-bottom: 15px;
 `;
 
-const ProductName = ({ ProductNameValue = 'Nombre' }) => (
+const ProductName = ({ productNameValue = 'Nombre' }) => (
 
   <ProductNameTxt>
-    {ProductNameValue}
+    {productNameValue}
   </ProductNameTxt>
 
 );

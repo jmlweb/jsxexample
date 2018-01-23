@@ -51,9 +51,9 @@ const ArticleCard = () => (
       <img src="//thumb.pccomponentes.com/w-220-220/articles/14/142348/l1.jpg" alt="" />
     </ProductImg>
 
-    <ProductName ProductNameValue='Xiaomi Mi Mix 2 64GB 4G Dual Sim Negro Libre' />
+    <ProductName productNameValue='Xiaomi Mi Mix 2 64GB 4G Dual Sim Negro Libre' />
 
-    <ProductPrice />
+    <ProductPrice productPriceMain='222' productPriceOld='240' />
 
 
   </ArticleCardWrapper >
