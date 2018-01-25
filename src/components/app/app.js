@@ -4,14 +4,14 @@ import { ThemeProvider } from 'styled-components';
 import theme from '../../theme';
 import logo from './logo.svg';
 import TestForm from '../testForm/testForm';
-import PlusMinusComp from '../plusMinus/plusMinus';
+//import PlusMinusComp from '../plusMinus/plusMinus';
 import PlayGround from '../playground/playground';
 //import GridExam from '../grid/syled-grid-ex';
 //import { Grid, Cell } from 'styled-css-grid';
 //import { Container, Row, Col } from 'react-grid-system';
 //import GridExample from '../grid/gridExample-01';
 //import ArticleCard from '../articleCard/articleCard';
-import StyledSistemExample from '../grid/styled-system-example';
+//import StyledSistemExample from '../grid/styled-system-example';
 import ArticleCardList from '../articleCard/ArticleCardList';
 
 
@@ -27,13 +27,13 @@ const App = () => (
       <GridExample /> */}
       {/* <GridExam /> */}
 
-      <StyledSistemExample />
+      {/* <StyledSistemExample /> */}
 
       <ArticleCardList />
 
       <PlayGround />
       <TestForm title="Enviar mensaje" />
-      <PlusMinusComp boxTitleText='Mas o menos' />
+      {/* <PlusMinusComp boxTitleText='Mas o menos' /> */}
 
     </div>
   </ThemeProvider>

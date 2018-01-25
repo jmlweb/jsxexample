@@ -1,11 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
+import logoprime from './logo-prime.svg';
 //import { Grid, Cell } from 'styled-css-grid';
 
 import TopLabel from '../articleCard/topLabel';
 import ProductImg from '../articleCard/ProductImg';
 import ProductName from '../articleCard/ProductName';
 import ProductPrice from '../articleCard/ProductPrice';
+import ProductAvailability from '../articleCard/ProductAvailability';
+import StarRating from '../starRating/star-rating';
 
 const ArticleCardWrapper = styled.div`
   background: #fff;
@@ -20,6 +23,10 @@ const TopLabelWrapper = styled.div`
   position: absolute;
   top:      10px;
   left:     10px;
+`;
+
+const LogoPrimeHolder = styled.div`
+  text-align: center;
 `;
 
 const ArticleCard = () => (
@@ -39,8 +46,17 @@ const ArticleCard = () => (
 
     <ProductName productNameValue='Xiaomi Mi Mix 2 64GB 4G Dual Sim Negro Libre' />
 
-    <ProductPrice productPriceMain='222,33' productPriceOld='240' productPriceDescountValue='14' />
+    <LogoPrimeHolder>
+      <img src={logoprime} width="100" />
+    </LogoPrimeHolder>
 
+    <ProductPrice productPriceMain='499' productPriceOld='512' productPriceDescountValue='12' />
+
+    <ProductAvailability immediate>
+      Recibelo <b>mañana</b>
+    </ProductAvailability>
+
+    <StarRating opinionsCount='2' />
 
   </ArticleCardWrapper >
 

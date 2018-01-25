@@ -7,6 +7,7 @@ const ProductPriceWrapper = styled.div`
   align-items:     center;
   justify-content: center;
   font-family:     sans-serif;
+  margin-bottom:   8px;
 `;
 
 const ProductPriceMain = styled.div`

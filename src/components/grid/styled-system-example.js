@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { space, width, fontSize, alignItems, flex, flexWrap, textAlign } from 'styled-system';
+import { width, fontSize, flex } from 'styled-system';
 
 const StyledSistemExampleGrid = styled.div`
     display: flex;

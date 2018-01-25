@@ -6,7 +6,7 @@ const ProductNameTxt = styled.div`
   font-family: sans-serif;
   font-size:13px;
   color: #888;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 `;
 
 const ProductName = ({ productNameValue = 'Nombre' }) => (
