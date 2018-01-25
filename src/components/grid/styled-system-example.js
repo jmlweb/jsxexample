@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import { space, width, fontSize, alignItems, flex, textAlign } from 'styled-system';
+import { space, width, fontSize, alignItems, flex, flexWrap, textAlign } from 'styled-system';
 
 const StyledSistemExampleGrid = styled.div`
+    display: flex;
     ${width}
     ${fontSize}
     ${flex}
-    background: #ccc;
 `;
 
 const BrickHolder = styled.div`
@@ -21,14 +21,14 @@ const Brick = styled.div`
 
 const StyledSistemExample = () => (
 
-  <StyledSistemExampleGrid >
+  <StyledSistemExampleGrid flex="1">
     {
       [...Array(4)].map((_obj, idx) => (
         <BrickHolder align='center'
           width={[1 / 2, 1 / 3, 1 / 4]}
           key={idx}
-          m={2}
-          p={2}>
+          m={[2]}
+          p={[2]}>
           <Brick>
             <p>Vivamus suscipit tortor eget felis porttitor volutpat.
               Praesent sapien massa, convallis a pellentesque nec,

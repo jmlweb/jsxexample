@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { colorPrimary, colorSuccess } from '../../constants/colors';
 
 
 const TopLabelItem = styled.div`
@@ -11,7 +10,7 @@ const TopLabelItem = styled.div`
 	font-size: 11px;
 	text-transform: uppercase;
 	padding:4px 7px;
-	background: ${props => props.default ? colorSuccess : colorPrimary};
+	background: ${props => props.default ? props.theme.colors.success : props.theme.colors.primary};
 	color: #fff;
 `;
 

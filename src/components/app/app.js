@@ -1,4 +1,7 @@
 import React from 'react';
+import { ThemeProvider } from 'styled-components';
+
+import theme from '../../theme';
 import logo from './logo.svg';
 import TestForm from '../testForm/testForm';
 import PlusMinusComp from '../plusMinus/plusMinus';
@@ -13,25 +16,27 @@ import ArticleCardList from '../articleCard/ArticleCardList';
 
 
 const App = () => (
-  <div>
-    <img src={logo} className="App-logo" alt="logo" width="200" />
-    {/* <Row>
-      <Col xs={6} md={3} lg={4}>
-        <ArticleCard />
-      </Col>
-    </Row>
-    <GridExample /> */}
-    {/* <GridExam /> */}
+  <ThemeProvider theme={theme}>
+    <div>
+      <img src={logo} className="App-logo" alt="logo" width="200" />
+      {/* <Row>
+        <Col xs={6} md={3} lg={4}>
+          <ArticleCard />
+        </Col>
+      </Row>
+      <GridExample /> */}
+      {/* <GridExam /> */}
 
-    <StyledSistemExample />
+      <StyledSistemExample />
 
-    <ArticleCardList />
+      <ArticleCardList />
 
-    <PlayGround />
-    <TestForm title="Enviar mensaje" />
-    <PlusMinusComp boxTitleText='Mas o menos' />
+      <PlayGround />
+      <TestForm title="Enviar mensaje" />
+      <PlusMinusComp boxTitleText='Mas o menos' />
 
-  </div>
+    </div>
+  </ThemeProvider>
 );
 
 

@@ -15,9 +15,9 @@ const Button = styled.button`
 	border-radius:3px;
 	text-align: center;
 	white-space: nowrap;
-	vertical-align: middle; 
+	vertical-align: middle;
 	user-select: none;
-	transition: all .2s ease-in-out; 
+	transition: all .2s ease-in-out;
 	margin:5px 5px 5px 0;
 
 	padding: ${styledMap({
@@ -49,10 +49,10 @@ const Button = styled.button`
 	color: ${styledMap({
 		secondary: '#444',
 		default: '#fff',
-	})}; 
-	
+	})};
+
   &:hover {
-		outline: none;	
+		outline: none;
 		transition: all .2s ease-in-out;
 		background: ${styledMap({
 		primary: hoverDarkColor(colorPrimary),
@@ -62,11 +62,11 @@ const Button = styled.button`
 		default: '#85786f',
 	})};
 	}
-	
+
 	&:focus, &:active:focus {
 		outline: none;
 	}
-	
+
 `;
 
 // no extends...
