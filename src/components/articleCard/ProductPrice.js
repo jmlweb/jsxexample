@@ -22,7 +22,7 @@ const ProductPriceOld = styled.div`
     margin-right:    5px;
     text-decoration: line-through;
     color:           #aaa;
-    margin-right: 8px;
+    margin-right:    8px;
 `;
 
 const ProductPriceDescount = styled.div`

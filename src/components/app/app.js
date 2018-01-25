@@ -8,6 +8,7 @@ import PlayGround from '../playground/playground';
 //import { Container, Row, Col } from 'react-grid-system';
 //import GridExample from '../grid/gridExample-01';
 //import ArticleCard from '../articleCard/articleCard';
+import StyledSistemExample from '../grid/styled-system-example';
 import ArticleCardList from '../articleCard/ArticleCardList';
 
 
@@ -21,6 +22,9 @@ const App = () => (
     </Row>
     <GridExample /> */}
     {/* <GridExam /> */}
+
+    <StyledSistemExample />
+
     <ArticleCardList />
 
     <PlayGround />
