@@ -13,6 +13,7 @@ import PlayGround from '../playground/playground';
 //import ArticleCard from '../articleCard/articleCard';
 //import StyledSistemExample from '../grid/styled-system-example';
 import ArticleCardList from '../articleCard/ArticleCardList';
+import GridThoughts from '../gridThoughts/gridThoughts';
 
 
 const App = () => (
@@ -29,9 +30,12 @@ const App = () => (
 
       {/* <StyledSistemExample /> */}
 
+      <GridThoughts />
+
       <ArticleCardList />
 
       <PlayGround />
+
       <TestForm title="Enviar mensaje" />
       {/* <PlusMinusComp boxTitleText='Mas o menos' /> */}
 
