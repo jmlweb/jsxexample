@@ -100,13 +100,19 @@ const GridThoughts = () => (
       <Cell middle>Menu</Cell>
       <Cell>
         <MainContent>
-          Main Content here
-          <Grid flow="column" columns={3}>
-            <Cell height={1}><Brick>Div Content 1</Brick></Cell>
-            <Cell height={2}><Brick>Div Content 2</Brick></Cell>
-            <Cell height={4}><Brick>Div Content 3</Brick></Cell>
-            <Cell height={1}><Brick>Div Content 4</Brick></Cell>
-            <Cell height={5}><Brick>Div Content 5</Brick></Cell>
+          Main Content
+          {/* flow-column */}
+          <Grid flow="row dense" columns={3}>
+            <Cell height={1}><Brick>Div--1</Brick></Cell>
+            <Cell height={2}><Brick>Div--2</Brick></Cell>
+            <Cell height={4}><Brick>Div--3</Brick></Cell>
+            <Cell height={1}><Brick>Div--4</Brick></Cell>
+            <Cell height={5}><Brick>Div--5</Brick></Cell>
+            <Cell height={2}><Brick>Div--6</Brick></Cell>
+            <Cell height={1}><Brick>Div--7</Brick></Cell>
+            <Cell height={1}><Brick>Div--8</Brick></Cell>
+            <Cell height={2}><Brick>Div--9</Brick></Cell>
+            <Cell height={2}><Brick>Div--10</Brick></Cell>
           </Grid>
         </MainContent>
       </Cell>

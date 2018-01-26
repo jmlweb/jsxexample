@@ -5,6 +5,7 @@
   "dependencies": {
     "polished": "^1.9.0",
     "react": "^16.2.0",
+    "react-breakpoints": "^1.0.1",
     "react-dom": "^16.2.0",
     "react-grid-system": "^3.1.2",
     "react-scripts": "1.0.17",
