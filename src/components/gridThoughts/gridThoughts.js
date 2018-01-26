@@ -7,8 +7,18 @@ const Brick = styled.div`
   border:     #333 1px solid; 
 `;
 
+const HeaderContent = styled.div`
+  background: #d2f4c6;
+  padding: 8px;
+`;
+
 const MainContent = styled.div`
   background: #e9edf8;
+  padding:8px;
+`;
+
+const FooterContent = styled.div`
+  background: #f9b1fa;
   padding:8px;
 `;
 
@@ -32,9 +42,9 @@ const GridThoughts = () => (
         "footer footer  footer"
       ]}>
       <Cell center area="header">
-        <Brick>
+        <HeaderContent>
           Header
-        </Brick>
+        </HeaderContent>
       </Cell>
 
       <Cell area="content">
@@ -67,9 +77,9 @@ const GridThoughts = () => (
       </Cell>
 
       <Cell center area="footer">
-        <Brick>
+        <FooterContent>
           Footer Content
-        </Brick>
+        </FooterContent>
       </Cell>
     </Grid>
 
@@ -78,25 +88,25 @@ const GridThoughts = () => (
     <Grid
       gap="0"
       flow="row" //not required
-      columns={"110px 1fr"}
+      columns={"20% 1fr"}
       rows={"minmax(55px,auto) 1fr minmax(55px,auto)"}>
-      <Cell width={2}>
-        <Brick>
-          <h1>Header</h1>
-        </Brick>
+      <Cell center width={2}>
+        <HeaderContent>
+          Header
+        </HeaderContent>
       </Cell>
 
       <Cell middle>Menu</Cell>
-      <Cell center middle>
+      <Cell>
         <MainContent>
           Main Content here
         </MainContent>
       </Cell>
 
       <Cell center width={2}>
-        <Brick>
+        <FooterContent>
           Footer
-        </Brick>
+        </FooterContent>
       </Cell>
     </Grid>
 
