@@ -1,6 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import { withBreakpoints } from 'react-breakpoints';
 import { Grid, Cell } from 'styled-css-grid';
+import { BreakPoints } from '../../constants/breakpoints';
+
+const MAIN_WIDTH = '20%';
+const LESS_COLUMNS = 2;
+const ALL_COLUMNS = 3;
 
 const Brick = styled.div`
   height:     100%;
@@ -28,7 +34,7 @@ const Card = styled.div`
   border:     #444 1px solid;
 `;
 
-const GridThoughts = () => (
+const GridThoughts = props => (
 
 
   <section>
@@ -36,11 +42,11 @@ const GridThoughts = () => (
     <Grid
       gap="0px"
       columns={"100px 1fr 100px"}
-      rows={"auro 1fr auto"}
+      rows="auro 1fr auto"
       areas={[
         "header header  header",
         "menu   content ads   ",
-        "footer footer  footer"
+        "footer footer  footer",
       ]}>
       <Cell center area="header">
         <HeaderContent>
@@ -89,7 +95,7 @@ const GridThoughts = () => (
     <Grid
       gap="0"
       flow="row" //not required
-      columns={"20% 1fr"}
+      columns={`${MAIN_WIDTH} 1fr`}
       rows={"minmax(auto,auto) auto minmax(55px,auto)"}>
       <Cell center width={2}>
         <HeaderContent>
@@ -102,7 +108,7 @@ const GridThoughts = () => (
         <MainContent>
           Main Content
           {/* flow-column */}
-          <Grid flow="row dense" columns={3}>
+          <Grid flow="row dense" columns={props.currentBreakpoint < BreakPoints.LG ? LESS_COLUMNS : ALL_COLUMNS}>
             <Cell height={1}><Brick>Div--1</Brick></Cell>
             <Cell height={2}><Brick>Div--2</Brick></Cell>
             <Cell height={4}><Brick>Div--3</Brick></Cell>
@@ -128,4 +134,4 @@ const GridThoughts = () => (
 
 );
 
-export default GridThoughts;
+export default withBreakpoints(GridThoughts);
