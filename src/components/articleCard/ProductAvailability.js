@@ -12,10 +12,10 @@ const AvailabilityTxt = styled.div`
 `;
 
 const ProductAvailability = props => {
-  const {
-    // availabilityModerate,
-    // availabilityImmediate,
-  } = props;
+  // const {
+  //   // availabilityModerate,
+  //   //availabilityImmediate,
+  // } = props;
 
   return (
     <AvailabilityTxt immediate={props.immediate}>

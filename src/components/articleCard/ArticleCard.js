@@ -42,12 +42,12 @@ const ArticleCard = () => (
       </TopLabel>
     </TopLabelWrapper>
 
-    <ProductImg imgSrc='//thumb.pccomponentes.com/w-220-220/articles/14/142348/l1.jpg' imgAlt='PcCom' />
+    <ProductImg imgSrc='//thumb.pccomponentes.com/w-220-220/articles/14/142348/l1.jpg' />
 
     <ProductName productNameValue='Xiaomi Mi Mix 2 64GB 4G Dual Sim Negro Libre' />
 
     <LogoPrimeHolder>
-      <img src={logoprime} width="100" />
+      <img src={logoprime} width="100" alt="logo Prime" title="logo Prime" />
     </LogoPrimeHolder>
 
     <ProductPrice productPriceMain='499' productPriceOld='512' productPriceDescountValue='12' />
