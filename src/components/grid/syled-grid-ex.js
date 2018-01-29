@@ -30,42 +30,42 @@ const Brick = styled.div`
 // gap="8px" -- pordefecto
 
 const GridExam = () => (
-	<article>
-		<Grid columns="repeat(auto-fit, minmax(200px, 1fr))" minRowHeight="45px" className="oops">
-			<Cell className="loops">
-				<Brick default>
-					<p>Nulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a
+  <article>
+    <Grid columns="repeat(auto-fit, minmax(200px, 1fr))" minRowHeight="45px" className="oops">
+      <Cell className="loops">
+        <Brick default>
+          <p>Nulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a
 						pellentesque nec, egestas non nisi. Sed porttitor lectus nibh. Nulla quis lorem ut
 						libero malesuada feugiat.</p>
-					<img src="http://via.placeholder.com/250x250" alt="" />
-				</Brick>
-			</Cell>
-			<Cell>
-				<Brick>
-					<p>Nulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a
+          <img src="http://via.placeholder.com/250x250" alt="" />
+        </Brick>
+      </Cell>
+      <Cell>
+        <Brick>
+          <p>Nulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a
 				pellentesque nec, egestas non nisi. Sed porttitor lectus nibh. Nulla quis lorem ut
 				libero malesuada feugiat.</p>
-					<img src="http://via.placeholder.com/250x250" alt="" />
-				</Brick>
-			</Cell>
+          <img src="http://via.placeholder.com/250x250" alt="" />
+        </Brick>
+      </Cell>
 
-			{
-				[...Array(8)].map(() => (
-					<Cell>
-						<Brick default>
-							<p>Nulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a
+      {
+        [...Array(8)].map(() => (
+          <Cell>
+            <Brick default>
+              <p>Nulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a
 						pellentesque nec, egestas non nisi. Sed porttitor lectus nibh. Nulla quis lorem ut
 						libero malesuada feugiat.</p>
-							<img src="http://via.placeholder.com/250x250" alt="" />
-						</Brick>
-					</Cell>
-				))
-			}
+              <img src="http://via.placeholder.com/250x250" alt="" />
+            </Brick>
+          </Cell>
+        ))
+      }
 
-		</Grid >
+    </Grid >
 
 
-	</article >
+  </article >
 );
 
 export default GridExam;

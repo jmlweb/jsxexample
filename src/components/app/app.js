@@ -6,32 +6,44 @@ import logo from './logo.svg';
 import TestForm from '../testForm/testForm';
 //import PlusMinusComp from '../plusMinus/plusMinus';
 import PlayGround from '../playground/playground';
-//import GridExam from '../grid/syled-grid-ex';
-//import { Grid, Cell } from 'styled-css-grid';
-//import { Container, Row, Col } from 'react-grid-system';
-//import GridExample from '../grid/gridExample-01';
-//import ArticleCard from '../articleCard/articleCard';
-//import StyledSistemExample from '../grid/styled-system-example';
+import GridExam from '../grid/syled-grid-ex';
+import { Grid, Cell } from 'styled-css-grid';
+import GridExample from '../grid/gridExample-01';
+import StyledSistemExample from '../grid/styled-system-example';
 import ArticleCardList from '../articleCard/ArticleCardList';
 import GridThoughts from '../gridThoughts/gridThoughts';
+import FlexBoxGrid from '../flexBoxGrid/flexBoxGrid';
+import MuiExample from '../mui/mui';
+import MyGrid from '../myGrid/myGrid';
 
 
 const App = () => (
   <ThemeProvider theme={theme}>
     <div>
       <img src={logo} className="App-logo" alt="logo" width="200" />
-      {/* <Row>
-        <Col xs={6} md={3} lg={4}>
-          <ArticleCard />
-        </Col>
-      </Row>
-      <GridExample /> */}
-      {/* <GridExam /> */}
 
-      {/* <StyledSistemExample /> */}
+      {/* <h2>MUI</h2>
+      <MuiExample />
 
+
+      <h2> react-grid-system</h2>
+      <GridExample />
+
+
+      <h2>styled-system</h2>
+      <StyledSistemExample />
+
+
+      <h2>styled-css-grid</h2>
       <GridThoughts />
 
+
+      <h2>react-flexbox-grid</h2>
+      <FlexBoxGrid /> */}
+
+      <MyGrid />
+
+      <h5>styled-css-grid</h5>
       <ArticleCardList />
 
       <PlayGround />
