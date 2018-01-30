@@ -2,7 +2,7 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 
 import theme from '../../theme';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import TestForm from '../testForm/testForm';
 //import PlusMinusComp from '../plusMinus/plusMinus';
 import PlayGround from '../playground/playground';
@@ -15,12 +15,15 @@ import GridThoughts from '../gridThoughts/gridThoughts';
 import FlexBoxGrid from '../flexBoxGrid/flexBoxGrid';
 import MuiExample from '../mui/mui';
 import MyGrid from '../myGrid/myGrid';
+import MainHeader from '../mainHeader/mainHeader';
 
 
 const App = () => (
   <ThemeProvider theme={theme}>
     <div>
-      <img src={logo} className="App-logo" alt="logo" width="200" />
+      <MainHeader />
+
+      {/* <img src={logo} className="App-logo" alt="logo" width="200" /> */}
 
       {/* <h2>MUI</h2>
       <MuiExample />
@@ -41,7 +44,7 @@ const App = () => (
       <h2>react-flexbox-grid</h2>
       <FlexBoxGrid /> */}
 
-      <MyGrid />
+      {/* <MyGrid /> */}
 
       <h5>styled-css-grid</h5>
       <ArticleCardList />

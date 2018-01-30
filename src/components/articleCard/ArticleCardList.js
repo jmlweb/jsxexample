@@ -15,7 +15,7 @@ const ArticleCardListWrapper = styled.div`
 const ArticleCardList = () => (
 
   <ArticleCardListWrapper>
-    <Grid columns="repeat(auto-fit, minmax(200px, 1fr))" minRowHeight="45px" className="oops">
+    <Grid columns="repeat(auto-fit, minmax(200px, 1fr))" className="oops">
 
       {
         [...Array(8)].map((_obj, idx) => (
