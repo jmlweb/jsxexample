@@ -8,7 +8,7 @@ import { setLightness } from 'polished';
 //const hasErrorColor = color => '#ff0'
 
 const Input = styled.input`
-  outline:         none; 
+  outline:          none; 
 	display:          block;
 	width:            75%;
 	font-size:        13px;
