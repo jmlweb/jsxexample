@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const UserAreaContent = styled.div`
   display: flex;
   margin:0 10px;
-  `;
+`;
 
 const UserAreaItemIcon = styled.div`
   font-size:     30px;
@@ -16,12 +16,6 @@ const UserAreaItemIcon = styled.div`
   padding:       10px;
   color:         #fff;
   transition: all .2s ease-out 0s;
-  
-  /* UserAreaItem:hover & {
-    background: #333;
-    transition: all .2s ease-out 0s;
-  } */
-  
 `;
 
 const UserAreaItem = styled.div`
@@ -36,10 +30,10 @@ const UserAreaItem = styled.div`
 `;
 
 const UserAreaItemTxtContent = styled.div`
-  font-size:      12px;
-  margin-right:   5px;
-  text-align: right;
-  font-family: sans-serif;
+  font-size:    12px;
+  margin-right: 5px;
+  text-align:   right;
+  font-family:  sans-serif;
 `;
 
 
@@ -49,11 +43,11 @@ const UserArea = () => (
       [...Array(3)].map((_obj, idx) => (
         <UserAreaItem middle center key={idx}>
           <UserAreaItemTxtContent>
-            Loreim <br /><b>Ipsum Uqqgz</b>
+            Loreim <br /><strong>Ipsum Uqqgz</strong>
           </UserAreaItemTxtContent>
           <UserAreaItemIcon>
             💃
-        </UserAreaItemIcon>
+          </UserAreaItemIcon>
         </UserAreaItem>
       ))
     }

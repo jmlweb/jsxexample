@@ -1,6 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Row, Col, Container } from 'react-grid-system';
+import { Row, Col, Container, ScreenClassRender } from 'react-grid-system';
+
+import ArticleCard from '../articleCard/ArticleCard';
+import AsideMenu from '../asideMenu/asideMenu';
+
+const SMALL_SCREEN_SIZES = ['sm', 'xs'];
+
+const rowProps = {
+  style: {
+    margin: '0 -7px 0 -7px',
+    // 'margin-left': '-20px',
+  },
+};
+
+const containerProps = {
+  style: {
+    //background: '#333',
+    padding: '0px',
+  },
+};
 
 const Brick = styled.div`
 	background: #000;
@@ -14,28 +33,51 @@ const Brick = styled.div`
 	}
 `;
 
+const ArticleCardListWrapper = styled.div`
+  background: #ebeced;
+  //padding: 10px;
+`;
+
+const ArticleCardContainer = styled.div`
+  display: block;
+  margin: 7px;
+`;
+
+const getX = (screenClass, props) =>
+  SMALL_SCREEN_SIZES.includes(screenClass)
+    ? ({
+      ...containerProps.style,
+      padding: '10px',
+    })
+    : containerProps.style;
+
 const GridExample = () => (
-  <Container fluid>
-    <Row nogutter>
-      <Col sm={3} md={4} lg={6}>
-        <Brick>
-          Div 1
-					<img src="http://via.placeholder.com/250x250" alt="" />
-        </Brick>
-      </Col>
-      <Col sm={6} md={4} lg={6} align="end" debug>
-        <Brick>
-          Center
-				</Brick>
-      </Col>
-      <Col sm={3} md={4} lg={12} debug>
-        <Brick>
-          Div 1
-					<img src="http://via.placeholder.com/250x250" alt="" />
-        </Brick>
-      </Col>
-    </Row>
-  </Container>
+  <ArticleCardListWrapper>
+    <ScreenClassRender style={getX}>
+      <Container>
+        <Row nogutter {...rowProps}>
+          <Col lg={3}>
+            <AsideMenu />
+          </Col>
+
+          <Col lg={9}>
+            <Row nogutter>
+              {
+                [...Array(8)].map((_obj, idx) => (
+                  <Col xs={6} sm={4} md={4} lg={3} >
+                    <ArticleCardContainer>
+                      <ArticleCard key={idx} />
+                    </ArticleCardContainer>
+                  </Col>
+                ))
+              }
+            </Row>
+          </Col>
+
+        </Row>
+      </Container>
+    </ScreenClassRender>
+  </ArticleCardListWrapper>
 );
 
-export default GridExample; 
+export default GridExample;

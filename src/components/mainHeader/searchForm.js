@@ -21,7 +21,7 @@ const SearchFormInput = Input.extend`
 
 const SearchFormWrapper = styled.div`
     display:   block;
-    margin:    0 75px 0 25px;
+    margin:    0 25px 0 25px;
     flex-grow: 1;
 `;
 

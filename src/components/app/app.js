@@ -1,5 +1,6 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
+import { ThemeProvider, injectGlobal } from 'styled-components';
+import { normalize, fontFace, fontFilePath } from 'polished';
 
 import theme from '../../theme';
 //import logo from './logo.svg';
@@ -16,6 +17,31 @@ import FlexBoxGrid from '../flexBoxGrid/flexBoxGrid';
 import MuiExample from '../mui/mui';
 import MyGrid from '../myGrid/myGrid';
 import MainHeader from '../mainHeader/mainHeader';
+
+injectGlobal`${normalize()}`;
+injectGlobal`
+  a {
+    font-size:       11px;
+    color:           #ff6000;
+    text-decoration:  none; 
+    &:hover {
+      color:      #fff;
+      background: #000;
+    }
+  }
+`;
+
+injectGlobal`${
+  fontFace({
+    'fontFamily': 'Open Sans',
+    'fontFilePath': '/fonts/OpenSans-Regular',
+    fileFormats: ['ttf']
+  }
+  )}
+  body {
+      font-family: 'Open Sans';
+    }
+`;
 
 
 const App = () => (
@@ -45,6 +71,9 @@ const App = () => (
       <FlexBoxGrid /> */}
 
       {/* <MyGrid /> */}
+
+      <h2> react-grid-system</h2>
+      <GridExample />
 
       <h5>styled-css-grid</h5>
       <ArticleCardList />

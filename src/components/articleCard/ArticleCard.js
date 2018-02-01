@@ -15,7 +15,7 @@ const ArticleCardWrapper = styled.div`
   position:   relative;
   padding:    13px;
   box-shadow: 0 3px 4px 0 rgba(0,0,0,.15);
-  margin:     1px;
+  /* /margin:     1px; */
 `;
 
 const TopLabelWrapper = styled.div`
@@ -57,6 +57,8 @@ const ArticleCard = () => (
     </ProductAvailability>
 
     <StarRating opinionsCount='2' />
+
+    <a href="#">Sos un mago</a>
 
   </ArticleCardWrapper >
 

@@ -5,7 +5,7 @@ const TriggerIcon = styled.div`
     transition: all .1s ease-in-out;
     cursor: pointer;
     font-size:     22px;
-    padding:       2px 8px;
+    padding:       5px 8px;
     border-radius: 5px;
     background:    #fff;
     border:        #ccc 2px solid;

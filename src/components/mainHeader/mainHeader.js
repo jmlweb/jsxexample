@@ -17,14 +17,14 @@ const MainHeaderWrapper = styled.div`
 
 const LogoWrapper = styled.div`
     display:   block;
-    cursor:    pointer;
-    img {
-      padding: 0 30px;
-      width:   150px;
-      height:  100%;
-    }
+    cursor:    pointer; 
 `;
 
+const Image = styled.img`
+  padding:    0 15px 0 0;
+  max-width:  220px;
+  max-height: 60px;
+`;
 
 
 const MainHeader = () => (
@@ -32,7 +32,7 @@ const MainHeader = () => (
   <MainHeaderWrapper>
 
     <LogoWrapper>
-      <img src={logo} className="App-logo" alt="logo" width="200" />
+      <Image src={logo} className="App-logo" alt="logo" width="200" />
     </LogoWrapper>
 
     <TriggerMenu />
